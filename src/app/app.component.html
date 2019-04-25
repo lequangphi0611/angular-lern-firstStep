@@ -1,20 +1,71 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="container col-xl-10 col-12 col-12 m-content w-100">
+  <!-- header -->
+  <!-- <header class="m-header"></header> -->
+
+  <!-- Menu -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light col-12 m-nav">
+    <a class="navbar-brand" href="">FPT Polytechnic</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+      aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+        <li class="nav-item">
+          <a class="nav-link align-middle" href="#">Giới thiệu <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Liên hệ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Góp ý</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hỏi đáp</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav mt-2 mt-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Tài khoản
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownId">
+            <a class="dropdown-item" href="" >Đăng ký</a>
+            <a class="dropdown-item" href="">Đăng nhập</a>
+            <!-- <div class="dropdown-divider" ng-show="isLogin()"></div> -->
+            <a class="dropdown-item" href="" >Cập nhật tài khoản</a>
+            <a class="dropdown-item" href="">Thông tin</a>
+            <a class="dropdown-item" href="" >Đăng xuất</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="col-12 mt-4 m-box">
+    <div class="row">
+      <!-- content left -->
+      <div class="container col-9 m-box-left">
+        <router-outlet></router-outlet>
+      </div>
+
+      <!-- content right -->
+      <div class="col-3  m-box-right mb-4">
+        <app-side-bar class="p-0"></app-side-bar>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="page-footer font-small">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+      © 2018 Copyright: Quang Phi
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 

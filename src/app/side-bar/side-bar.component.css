@@ -1,0 +1,13 @@
+.my-list a {
+    text-decoration: none;
+    color: #343a40;
+}
+
+.my-list .list-group-item {
+    transition: background 0.5s;
+}
+
+.my-list .list-group-item:hover {
+    background: rgb(230, 230, 230);
+    cursor: pointer;
+}

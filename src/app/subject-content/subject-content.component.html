@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-lg-6 col-12 mb-lg-4 mb-3" *ngFor="let subject of subjects | slice:start:end">
+    <div class="card">
+      <div class="card-body d-flex justify-content-center">
+        <a href=""><img src="assets/img/subjects/{{subject.Logo}}" alt="" /></a>
+      </div>
+      <div class="card-footer text-center">
+        <a href="#" class="text-dark" style="text-decoration: none; font-size: 1.2em">
+          {{ subject.Id }} - {{ subject.Name }}
+          <!-- <span class="badge badge-info">Đã thi</span> -->
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pagination -->
+<nav aria-label="Page navigation example" class="mt-4 d-flex justify-content-center">
+  <ul class="pagination">
+    <li class="page-item">
+      <button class="page-link"  >
+        <i class="fas fa-step-backward"></i>
+      </button>
+    </li>
+    <li class="page-item">
+      <button class="page-link"  (click)="prev()">
+        <i class="fas fa-backward"></i>
+      </button>
+    </li>
+    <li class="page-item">
+      <button class="page-link" (click)="next()">
+        <i class="fas fa-forward"></i>
+      </button>
+    </li>
+    <li class="page-item">
+      <button class="page-link"  >
+        <i class="fas fa-step-forward"></i>
+      </button>
+    </li>
+  </ul>
+</nav>
