@@ -13,6 +13,7 @@ export class SubjectService {
   }
 
    getSubjects(callback) {
-      return this.http.get(this.URL).subscribe((data:Subject[]) => callback(data))};
+      return this.http.get(this.URL).subscribe((data:Subject[]) => callback(data))
+    };
 
 }
